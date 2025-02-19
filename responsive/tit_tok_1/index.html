@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header Responsive</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Logo</a>
+      <div class="navigation">
+        <ul class="menu">
+          <i class="fa-solid fa-xmark close-btn"></i>
+          <li class="menu-item"><a href="#">Home</a></li>
+          <li class="menu-item">
+            <a class="sub-btn" href="#"
+              >Dropdown <i class="fas fa-angle-down"></i
+            ></a>
+            <ul class="sub-menu">
+              <li class="sub-item"><a href="#">Sub Item 01</a></li>
+              <li class="sub-item"><a href="#">Sub Item 02</a></li>
+              <li class="sub-item"><a href="#">Sub Item 03</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="sub-btn" href="#"
+              >With Sub-Dropdown <i class="fas fa-angle-down"></i
+            ></a>
+            <ul class="sub-menu subtow">
+              <li class="sub-item"><a href="#">Sub Item 01</a></li>
+              <li class="sub-item"><a href="#">Sub Item 02</a></li>
+              <li class="sub-item"><a href="#">Sub Item 03</a></li>
+              <li class="sub-item"><a href="#">Sub Item 04</a></li>
+              <li class="sub-item more">
+                <a class="more-btn" href="#"
+                  >More Items <i class="fas fa-angle-right"></i
+                ></a>
+                <ul class="more-menu">
+                  <li class="more-item"><a href="#">More Item 01</a></li>
+                  <li class="more-item"><a href="#">More Item 02</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#">Setvices</a></li>
+          <li class="menu-item"><a href="#">About</a></li>
+          <li class="menu-item"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars menu-btn"></i>
+    </header>
+    <section class="section-home">
+      <h1>Responsive Navigation Menu with DROPDOWN</h1>
+    </section>
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>
