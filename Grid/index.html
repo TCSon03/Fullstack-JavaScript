@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Auto-Fit</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            /* gap: 10px; */
+            background: #ddd;
+            /* padding: 10px; */
+        }
+
+        .item {
+            background: lightblue;
+            
+            text-align: center;
+            /* padding: 20px;
+            font-size: 20px;
+            border-radius: 5px; */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+</div>
+
+</body>
+</html>

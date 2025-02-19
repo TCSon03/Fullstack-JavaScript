@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr; /* 2 cột: sidebar 200px, content chiếm phần còn lại */
+            grid-template-rows: auto 1fr auto; /* 3 hàng: header, content, footer */
+            grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer"; /* Định nghĩa layout bằng grid-template-areas */
+            height: 100vh; /* Chiếm toàn bộ chiều cao của màn hình */
+            gap: 10px; /* Khoảng cách giữa các ô */
+        }
+
+        header {
+            grid-area: header;
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        sidebar {
+            grid-area: sidebar;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .content {
+            grid-area: content;
+            background: #f9f9f9;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* 1 cột, sidebar xuống dưới */
+                grid-template-areas:
+                    "header"
+                    "content"
+                    "sidebar"
+                    "footer"; /* Sidebar xuống dưới content */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>Header</header>
+        <sidebar>Sidebar</sidebar>
+        <div class="content">Content</div>
+        <footer>Footer</footer>
+    </div>
+
+</body>
+</html>
