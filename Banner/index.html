@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide show</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="slide-show">
+        <div class="slides">
+            <div class="slide">
+                <img src="image/product_1.svg" alt="">
+                <div class="content">Noi dung 1</div>
+            </div>
+            <div class="slide">
+                <img src="image/product_2.svg" alt="">
+                <div class="content">Noi dung 2</div>
+            </div>
+            <div class="slide">
+                <img src="image/product_3.svg" alt="">
+                <div class="content">Noi dung 3</div>
+            </div>
+            <div class="slide">
+                <img src="image/product_4.svg" alt="">
+                <div class="content">Noi dung 4</div>
+            </div>
+        </div>
+        <div class="btn-box">
+            <button class="btn" onclick="preview()">Preview</button>
+            <button class="btn" id="pause">Pause</button>
+            <button class="btn" onclick="next()">Next</button>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

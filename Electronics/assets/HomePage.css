@@ -261,7 +261,6 @@ ul li a {
 .sale__products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  flex-wrap: nowrap;
   gap: 30px;
   margin-bottom: 60px;
 }
